@@ -1,0 +1,10 @@
+/* Fonts for Body */
+@font-face{
+  font-family: 'Poppins';
+  src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+/* Fonts for Heading */
+@font-face{
+  font-family: 'Raleway';
+  src: url(../font/Raleway/Raleway-Regular.ttf);
+}

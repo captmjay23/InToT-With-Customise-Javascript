@@ -1,0 +1,475 @@
+@import url(../css/style.css);
+/* Header */
+.nav{
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--primary-color);
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 500;
+}
+.nav .branding .brand{
+  margin-left: 1em;
+  font-size: 2rem;
+  color: var(--tertiary-color);
+}
+.nav .nav-access,
+.nav .nav-access .nav-access-link{
+  /* Layout */
+  display: flex;
+  align-items: center;
+}
+.nav .nav-access li{
+  margin-right: 3.125em;
+  list-style-type: none;
+}
+.nav .nav-access li img{
+  margin-right: 1em;
+}
+.nav .nav-access li a{
+  color: var(--tertiary-color);
+  font-size: 1rem;
+}
+.nav .nav-access .burger-menu{
+  cursor: pointer;
+  color: var(--tertiary-color);
+  font-size: 1.8rem;
+  margin-right: 1em;
+  z-index: 1000;
+}
+.nav .navbar-nav{
+  list-style-type: none;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100vh;
+  opacity: .9;
+  /* Layout */
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* Transition */
+  transition: transform .5s ease-in-out;
+}
+.nav .navbar-nav.active-nav{
+  transform: translateX(0%);
+}
+.nav .navbar-nav.passive-nav{
+  transform: translateX(-100%);
+}
+.nav .navbar-nav .navbar-link a{
+  color: var(--tertiary-color);
+  display: block;
+  font-size: 1.375rem;
+}
+/* End Header */
+/* Banner Section */
+.banner{
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+.banner .banner-carousel-container{
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+.banner .banner-carousel-container .inner-banner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content{
+  width: 100%;
+  max-width: 100%;
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info{
+  max-width: 360px;
+  width: 100%;
+  margin: 0 0 0 100px;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info h1,
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info p{
+  color: var(--tertiary-color);
+}
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info .btn{
+  margin-top: 2em;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides .banner-content img{
+  min-width: 580px;
+  width: 100%;
+}
+.banner .banner-carousel-container .inner-banner .banner-slides.active-slide{
+  display: block;
+}
+.banner .banner-carousel-container .button-container{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner .banner-carousel-container .button-container .next-button,
+.banner .banner-carousel-container .button-container .prev-button{
+  cursor: pointer;
+  font-size: 2rem;
+  padding: .5em;
+  background-color: #333;
+  border-radius: 50%;
+}
+/* End Banner Section */
+/* Why Initiative Company */
+.intot-section-description{
+  text-align: center;
+  padding-bottom: 4em;
+}
+.intot-section-description h2{
+  text-transform: uppercase;
+}
+.initiative-company .card-items{
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.initiative-company .card-items .card-item{
+  max-width: 30%;
+  min-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+.initiative-company .card-items .card-item .card-content{
+  padding: 3em 2.5em;
+  box-shadow: 2px 2px 10px rgba(0,0,0, .4);
+}
+.initiative-company .card-items .card-item .card-content h3{
+  margin: 3em 0 1.5em;
+}
+.initiative-company .card-items .card-item .btn{
+  margin: 3em 0;
+}
+/* End Why Initiative Company */
+/* Our Portfolio */
+.our-portfolio .portfolio-image-gallery{
+  /* Layout */
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: 
+  "bookshelf bookshelf key"
+  "bathtub lounge lounge";
+}
+.our-portfolio .portfolio-image-gallery img{
+  width: 100%;
+}
+.our-portfolio .portfolio-image-gallery .img-1{
+  grid-area: bookshelf;
+}
+.our-portfolio .portfolio-image-gallery .img-2{
+  grid-area: key;
+}
+.our-portfolio .portfolio-image-gallery .img-3{
+  grid-area: bathtub;
+}
+.our-portfolio .portfolio-image-gallery .img-4{
+  grid-area: lounge;
+}
+/* End Our Portfolio */
+/* Our Team */
+.our-team .intot-team{
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-team .intot-team .card-team{
+  width: 25%;
+  min-width: 250px;
+  margin: 0 auto;
+}
+.our-team .intot-team .card-team .card-team-info{
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-team .intot-team .card-team .card-team-info .team-info-img{
+  width: 250px;
+  height: 250px;
+}
+.our-team .intot-team .card-team .card-team-info .team-info-name{
+  margin-top: 1em;
+}
+.our-team .intot-team .card-team .card-team-info .team-info-job{
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+  color: var(--secondary-color);
+}
+.our-team .intot-team .card-contact-team{
+  list-style-type: none;
+  /* layout */
+  display: flex;
+  justify-content: center;
+}
+.our-team .intot-team .card-contact-team li{
+  margin-right: 1em;
+}
+.our-team .intot-team .card-contact-team li:last-child{
+  margin-right: 0;
+}
+.our-team .intot-team .card-contact-team li a{
+  color: #c0ff00;
+}
+.our-team .intot-team .card-contact-team li a:hover{
+  color: var(--primary-color);
+}
+.our-team .intot-team .card-contact-team li a .fa-facebook,
+.our-team .intot-team .card-contact-team li a .fa-twitter,
+.our-team .intot-team .card-contact-team li a .fa-linkedin-in,
+.our-team .intot-team .card-contact-team li a .fa-instagram{
+  font-size: 1.525rem;
+}
+/* End Our Team */
+
+/* Large Devices */
+/* Medium Devices */
+@media only screen and (max-width: 768px) and (min-width: 568px){
+  .hide-desktop{
+    display: block;
+  }
+  .nav .nav-access .nav-access-link{
+    display: none;
+  }
+  .nav .navbar-nav{
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+    /* Layout */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Transition */
+    transition: transform .5s ease-in-out;
+  }
+  .nav .navbar-nav.active-nav{
+    transform: translateX(0%);
+  }
+  .nav .navbar-nav.passive-nav{
+    transform: translateX(-100%);
+  }
+  .nav .navbar-nav .navbar-link a{
+    color: var(--tertiary-color);
+    display: block;
+    font-size: 1.375rem;
+  }
+  /* Banner Slider Section */
+  .banner{
+    height: 110vh;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content{
+    /* Layout */
+    flex-direction: column;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info{
+    max-width: 100%;
+    margin: 0 16px;
+    text-align: center;
+    padding: 3em 1em 0;
+  }
+  .banner .banner-carousel-container .button-container{
+    top: 85%;
+  }
+  /* Our Portfolio */
+  .our-portfolio .portfolio-image-gallery{
+    /* Layout */
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "bookshelf"
+    "key"
+    "bathtub"
+    "lounge";
+  }
+}
+/* Small Devices */
+@media only screen and (max-width: 568px) and (min-width: 375px){
+  .hide-desktop{
+    display: block;
+  }
+  .nav .nav-access .nav-access-link{
+    display: none;
+  }
+  .nav .navbar-nav{
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+    /* Layout */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Transition */
+    transition: transform .5s ease-in-out;
+  }
+  .nav .navbar-nav.active-nav{
+    transform: translateX(0%);
+  }
+  .nav .navbar-nav.passive-nav{
+    transform: translateX(-100%);
+  }
+  .nav .navbar-nav .navbar-link a{
+    color: var(--tertiary-color);
+    display: block;
+    font-size: 1.375rem;
+  }
+  /* Banner Slider Section */
+  .banner{
+    height: 110vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content{
+    /* Layout */
+    flex-direction: column;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info{
+    max-width: 100%;
+    margin: 0 16px;
+    text-align: center;
+    padding: 0 1em;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info h1{
+    font-size: 2.3rem;
+  }
+  .banner .banner-carousel-container .button-container{
+    top: 85%;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content img{
+    max-width: 100%;
+    width: 100%;
+  }
+  /* Our Portfolio */
+  .our-portfolio .portfolio-image-gallery{
+    /* Layout */
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "bookshelf"
+    "key"
+    "bathtub"
+    "lounge";
+  }
+}
+/* Extra Small Devices */
+@media only screen and (max-width: 375px) and (min-width: 0px){
+  .hide-desktop{
+    display: block;
+  }
+  .nav .nav-access .nav-access-link{
+    display: none;
+  }
+  .nav .navbar-nav{
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+    /* Layout */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Transition */
+    transition: transform .5s ease-in-out;
+  }
+  .nav .navbar-nav.active-nav{
+    transform: translateX(0%);
+  }
+  .nav .navbar-nav.passive-nav{
+    transform: translateX(-100%);
+  }
+  .nav .navbar-nav .navbar-link a{
+    color: var(--tertiary-color);
+    display: block;
+    font-size: 1.375rem;
+  }
+  /* Banner Slider Section */
+  .banner{
+    height: 110vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content{
+    /* Layout */
+    flex-direction: column;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info{
+    max-width: 100%;
+    margin: 0 16px;
+    text-align: center;
+    padding: 0 1em;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info h1{
+    font-size: 2.3rem;
+  }
+  .banner .banner-carousel-container .button-container{
+    top: 85%;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content img{
+    max-width: 100%;
+    width: 100%;
+  }
+  /* Our Portfolio */
+  .our-portfolio .portfolio-image-gallery{
+    /* Layout */
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "bookshelf"
+    "key"
+    "bathtub"
+    "lounge";
+  }
+}
+/* Media Queries For Landscape Mode */
+@media only screen and (max-width: 768px) and (orientation: Landscape){
+  /* Header */
+  .nav{
+    height: 15vh;
+  }
+  /* Banner Slider Section */
+  .banner{
+    height: 230vh;
+  }
+  .banner .banner-carousel-container{
+    height: 190vh;
+  }
+  .banner .banner-carousel-container .inner-banner .banner-slides .banner-content .banner-info{
+    margin: 5em 16px 0;
+    padding: 1em 1em;
+  }
+}

@@ -1,0 +1,99 @@
+/* Fonts */
+@import url(../css/fonts.css);
+:root{
+  /* Fonts */
+  --ff-heading-text:'Raleway', sans-serif;
+  --ff-body-text:'Poppins', sans-serif;
+  /* Color */
+  --primary-color:#c4d70f;
+  --secondary-color:#191919;
+  --tertiary-color:#fff;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-family: var(--ff-body-text);
+}
+body{
+  line-height: 1.5;
+  background-color: var(--tertiary-color);
+}
+/* Helper Class */
+.container{
+  max-width: 1170px;
+  width: 95%;
+  margin: 0 auto;
+}
+.hide-desktop{
+  display: none;
+}
+.current-slide{
+  display: block;
+}
+.font-style{
+  color: #000;
+}
+/* Typography */
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--ff-heading-text);
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+}
+section{
+  padding: 100px 0 75px;
+}
+/* Button */
+.btn{
+  font-size: 1rem;
+  padding: .4em 2.18em;
+  text-decoration: none;
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  transition: background-color, color, .2s ease-in-out;
+  border-radius: 50px;
+}
+.btn-primary{
+  border-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+  background-color: transparent;
+}
+.btn.btn-primary:hover{
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+.btn-secondary{
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+}
+.btn.btn-secondary:hover{
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.btn-tertiary{
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
