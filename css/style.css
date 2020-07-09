@@ -77,6 +77,7 @@ section{
   background-color: transparent;
   transition: background-color, color, .2s ease-in-out;
   border-radius: 50px;
+  font-family: var(--ff-body-text);
 }
 .btn-primary{
   border-color: var(--tertiary-color);
