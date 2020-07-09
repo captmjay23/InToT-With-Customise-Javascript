@@ -194,25 +194,27 @@
 /* End Our Portfolio */
 /* Our Team */
 .our-team .intot-team{
+  border-bottom: 3px solid var(--primary-color);
+  padding: 2em 0;
   /* Layout */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .our-team .intot-team .card-team{
-  width: 25%;
-  min-width: 250px;
-  margin: 0 auto;
+  width: 250px;
+  margin: 2em auto;
 }
 .our-team .intot-team .card-team .card-team-info{
+
   /* Layout */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .our-team .intot-team .card-team .card-team-info .team-info-img{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
 }
 .our-team .intot-team .card-team .card-team-info .team-info-name{
   margin-top: 1em;
@@ -248,7 +250,57 @@
   font-size: 1.525rem;
 }
 /* End Our Team */
-
+/* Consultation Section */
+.intot-consultation .intot-consultation-headline{
+  text-align: center;
+}
+.intot-consultation .intot-consultation-headline p{
+  font-size: 1.2rem;
+}
+.intot-consultation .intot-consultation-headline h2{
+  font-size: 2rem;
+}
+.intot-consultation .consultation-form-container{
+  /* layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.intot-consultation .consultation-form-container .consultation-form{
+  width: 50%;
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.intot-consultation .consultation-form-container .consultation-form .form{
+  margin: 0 0 1.3em;
+}
+.intot-consultation .consultation-form-container .consultation-form .form p{
+  color:#787877;
+  font-size: 1.125rem;
+  margin: 0 0 .3em;
+}
+.intot-consultation .consultation-form-container .consultation-form .form .input-form{
+  width: 80%;
+  padding: 1em 0 1em 1em;
+  border-color: #78787749;
+}
+.intot-consultation .consultation-form-container .consultation-form .consultation-btn-send{
+  max-width: 125px;
+  border: none;
+  cursor: pointer;
+}
+.intot-consultation .consultation-form-container .consultation-form .form .form-textarea{
+  width: 80%;
+  padding: 1em 0 1em 1em;
+  border-color: #78787749;
+  resize: none;
+}
+.intot-consultation .consultation-form-container .consultation-img-holder img{
+  max-width: 100%;
+}
+/* End Consultation Section */
 /* Large Devices */
 /* Medium Devices */
 @media only screen and (max-width: 768px) and (min-width: 568px){
@@ -303,6 +355,8 @@
   }
   /* Our Portfolio */
   .our-portfolio .portfolio-image-gallery{
+    max-width: 510px;
+    margin: 0 auto;
     /* Layout */
     display: grid;
     grid-gap: 1em;
@@ -311,6 +365,19 @@
     "key"
     "bathtub"
     "lounge";
+  }
+  /* Consultation */
+  .intot-consultation .consultation-form-container{
+    /* layout */
+    flex-direction: column;
+    align-items: center;
+  }
+  .intot-consultation .consultation-form-container .consultation-form{
+    width: 70%;
+  }
+  .intot-consultation .consultation-form-container .consultation-form .form .input-form,
+  .intot-consultation .consultation-form-container .consultation-form .form .form-textarea{
+    width: 100%;
   }
 }
 /* Small Devices */
@@ -374,6 +441,8 @@
   }
   /* Our Portfolio */
   .our-portfolio .portfolio-image-gallery{
+    max-width: 510px;
+    margin: 0 auto;
     /* Layout */
     display: grid;
     grid-gap: 1em;
@@ -382,6 +451,19 @@
     "key"
     "bathtub"
     "lounge";
+  }
+  /* Consultation */
+   .intot-consultation .consultation-form-container{
+    /* layout */
+    flex-direction: column;
+    align-items: center;
+  }
+  .intot-consultation .consultation-form-container .consultation-form{
+    width: 70%;
+  }
+  .intot-consultation .consultation-form-container .consultation-form .form .input-form,
+  .intot-consultation .consultation-form-container .consultation-form .form .form-textarea{
+    width: 100%;
   }
 }
 /* Extra Small Devices */
@@ -445,6 +527,8 @@
   }
   /* Our Portfolio */
   .our-portfolio .portfolio-image-gallery{
+    max-width: 510px;
+    margin: 0 auto;
     /* Layout */
     display: grid;
     grid-gap: 1em;
@@ -453,6 +537,19 @@
     "key"
     "bathtub"
     "lounge";
+  }
+  /* Consultation */
+   .intot-consultation .consultation-form-container{
+    /* layout */
+    flex-direction: column;
+    align-items: center;
+  }
+  .intot-consultation .consultation-form-container .consultation-form{
+    width: 70%;
+  }
+  .intot-consultation .consultation-form-container .consultation-form .form .input-form,
+  .intot-consultation .consultation-form-container .consultation-form .form .form-textarea{
+    width: 100%;
   }
 }
 /* Media Queries For Landscape Mode */
