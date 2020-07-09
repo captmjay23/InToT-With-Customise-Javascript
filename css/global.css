@@ -443,6 +443,9 @@
     width: 100%;
   }
   /* Footer */
+  .footer-content {
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  }
   .footer-content .footer-inner-content{
     height: 1100px;
     /* layout */
@@ -550,7 +553,7 @@
   }
   /* Footer */
   .footer-content {
-    clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
   }
   .footer-content .footer-inner-content{
     height: 990px;
